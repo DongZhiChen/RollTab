@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "V_RollingTab.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    V_RollingTab *tb = [[V_RollingTab alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
+    tb.arrayTitles = @[@"TEST",@"TEST",@"TEST",@"test",@"setwee"];
+    [self.view addSubview:tb];
+    
 }
 
 

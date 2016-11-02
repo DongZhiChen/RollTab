@@ -15,6 +15,8 @@
 		F2234C791DCA1E2E00D6F534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2234C771DCA1E2E00D6F534 /* LaunchScreen.storyboard */; };
 		F2234C841DCA1E2E00D6F534 /* RollTabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2234C831DCA1E2E00D6F534 /* RollTabTests.m */; };
 		F2234C8F1DCA1E2E00D6F534 /* RollTabUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2234C8E1DCA1E2E00D6F534 /* RollTabUITests.m */; };
+		F2234C9F1DCA1E6400D6F534 /* V_RollingTab.m in Sources */ = {isa = PBXBuildFile; fileRef = F2234C9E1DCA1E6400D6F534 /* V_RollingTab.m */; };
+		F2234CA31DCA1F0D00D6F534 /* UIView+LayerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F2234CA21DCA1F0D00D6F534 /* UIView+LayerLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F2234C8A1DCA1E2E00D6F534 /* RollTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2234C8E1DCA1E2E00D6F534 /* RollTabUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollTabUITests.m; sourceTree = "<group>"; };
 		F2234C901DCA1E2E00D6F534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2234C9D1DCA1E6400D6F534 /* V_RollingTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V_RollingTab.h; sourceTree = "<group>"; };
+		F2234C9E1DCA1E6400D6F534 /* V_RollingTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V_RollingTab.m; sourceTree = "<group>"; };
+		F2234CA11DCA1F0D00D6F534 /* UIView+LayerLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerLine.h"; sourceTree = "<group>"; };
+		F2234CA21DCA1F0D00D6F534 /* UIView+LayerLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerLine.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		F2234C681DCA1E2E00D6F534 /* RollTab */ = {
 			isa = PBXGroup;
 			children = (
+				F2234CA01DCA1F0D00D6F534 /* Category */,
+				F2234C9C1DCA1E6400D6F534 /* 滚动标签 */,
 				F2234C6C1DCA1E2E00D6F534 /* AppDelegate.h */,
 				F2234C6D1DCA1E2E00D6F534 /* AppDelegate.m */,
 				F2234C6F1DCA1E2E00D6F534 /* ViewController.h */,
@@ -138,6 +146,24 @@
 				F2234C901DCA1E2E00D6F534 /* Info.plist */,
 			);
 			path = RollTabUITests;
+			sourceTree = "<group>";
+		};
+		F2234C9C1DCA1E6400D6F534 /* 滚动标签 */ = {
+			isa = PBXGroup;
+			children = (
+				F2234C9D1DCA1E6400D6F534 /* V_RollingTab.h */,
+				F2234C9E1DCA1E6400D6F534 /* V_RollingTab.m */,
+			);
+			path = "滚动标签";
+			sourceTree = "<group>";
+		};
+		F2234CA01DCA1F0D00D6F534 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2234CA11DCA1F0D00D6F534 /* UIView+LayerLine.h */,
+				F2234CA21DCA1F0D00D6F534 /* UIView+LayerLine.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2234C9F1DCA1E6400D6F534 /* V_RollingTab.m in Sources */,
 				F2234C711DCA1E2E00D6F534 /* ViewController.m in Sources */,
 				F2234C6E1DCA1E2E00D6F534 /* AppDelegate.m in Sources */,
+				F2234CA31DCA1F0D00D6F534 /* UIView+LayerLine.m in Sources */,
 				F2234C6B1DCA1E2E00D6F534 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
