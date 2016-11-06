@@ -26,5 +26,5 @@ typedef NS_ENUM(NSInteger, LayerLineType) {
 @property (nonatomic,assign) LayerLineType layerLineType;
 
 
-@property (nonatomic, assign) float layerHeight;
+@property (nonatomic, assign) CGFloat layerHeight;
 @end

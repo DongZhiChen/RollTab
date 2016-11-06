@@ -40,7 +40,7 @@ static void *strLayerHeight = &strLayerHeight;
     
     CGSize mainSize = self.frame.size;
     
-    float layerHeight = self.layerHeight;
+    CGFloat layerHeight = self.layerHeight;
     
     CGFloat height = layerHeight != 0 ? layerHeight :mainSize.height;
     
@@ -79,15 +79,15 @@ static void *strLayerHeight = &strLayerHeight;
 #pragma mark - LayerHeight -
 
 
--(void)setLayerHeight:(float)layerHeight{
+-(void)setLayerHeight:(CGFloat)layerHeight{
     
     NSNumber *height = [NSNumber numberWithFloat:layerHeight];
     
-    objc_setAssociatedObject(self, & strLayerHeight, height, OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, & strLayerHeight, height, OBJC_ASSOCIATION_RETAIN);
 }
 
--(float)layerHeight{
-    
+-(CGFloat)layerHeight{
+    NSLog(@"%@",objc_getAssociatedObject(self, &strLayerHeight));
     return [objc_getAssociatedObject(self, &strLayerHeight) floatValue];
     
 }

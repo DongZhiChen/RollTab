@@ -18,8 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    V_RollingTab *tb = [[V_RollingTab alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
-    tb.arrayTitles = @[@"TEST",@"TEST",@"TEST",@"test",@"setwee"];
+    V_RollingTab *tb = [[V_RollingTab alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 50)];
+    tb.arrayTitles = @[@"TEST",@"TEST",@"TEST",@"test",@"setwee",@"TEST",@"TEST",@"TEST",@"test",@"setwee"];
+    tb.isAddIndexLine = YES;
+    tb.isCanRoll= YES;
     [self.view addSubview:tb];
     
 }
